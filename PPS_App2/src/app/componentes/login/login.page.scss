@@ -1,0 +1,23 @@
+ion-content{
+    --ion-background-color: transparent;
+    background: url("../../../assets/fondo/infantil.png"); 
+}
+
+.avatares{
+    position: relative;
+    margin-top: 10%;
+    padding-left: 55%;
+    padding-right: 5%;
+}
+
+.contenedor{
+    padding-left: 25%;
+    padding-right: 2%;
+}
+
+.login{
+    position: relative;
+    background-color: rgba(238, 255, 0, 0.623);
+    border-style: solid;
+    border-color: yellowgreen;
+}

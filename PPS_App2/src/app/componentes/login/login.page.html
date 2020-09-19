@@ -1,0 +1,71 @@
+<ion-content>
+  <ion-button size="large" color="danger" style="padding-left: 3%; padding-top: 3%;">X</ion-button>
+
+  <div class="avatares">
+    <ion-chip class="ion-margin-start" (click)="IngresarTipo('Administrador')">
+      <ion-avatar>
+        <img src="../../../assets/avatar/1.png">
+      </ion-avatar>
+      <ion-label>Administrador</ion-label>
+    </ion-chip>
+
+    <ion-chip class="ion-margin-start" (click)="IngresarTipo('Usuario')">
+      <ion-avatar>
+        <img src="../../../assets/avatar/2.png">
+      </ion-avatar>
+      <ion-label>Usuario</ion-label>
+    </ion-chip>
+
+    <ion-chip class="ion-margin-start" (click)="IngresarTipo('Invitado')">
+      <ion-avatar>
+        <img src="../../../assets/avatar/3.png">
+      </ion-avatar>
+      <ion-label>Invitado</ion-label>
+    </ion-chip>
+
+    <ion-chip class="ion-margin-start" (click)="IngresarTipo('Anonimo')">
+      <ion-avatar>
+        <img src="../../../assets/avatar/4.png">
+      </ion-avatar>
+      <ion-label>Anonimo</ion-label>
+    </ion-chip>
+
+    <ion-chip class="ion-margin-start" (click)="IngresarTipo('Tester')">
+      <ion-avatar>
+        <img src="../../../assets/avatar/5.png">
+      </ion-avatar>
+      <ion-label>Tester</ion-label>
+    </ion-chip>
+  </div>
+
+  <br><br>
+
+  <div class="contenedor">
+    <div class="login">
+
+      <br>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../../assets/avatar/usuario.png">
+        </ion-avatar>
+        <ion-label color="danger">{{errorEmail}}</ion-label>
+        <ion-label position="stacked">Correo</ion-label>
+        <ion-input (click)="LimpiarErrorEmail()" [(ngModel)]="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../../assets/avatar/key.png">
+        </ion-avatar>
+        <ion-label color="danger">{{errorPass}}</ion-label>
+        <ion-label position="stacked">Contraseña</ion-label>
+        <ion-input (click)="LimpiarErrorPass()" [(ngModel)]="pass"></ion-input>
+      </ion-item>
+      <br>
+
+      <ion-button (click)="Ingresar()" expand="full" color="warning"
+        style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: Bold;">INGRESAR</ion-button>
+    </div>
+  </div>
+
+</ion-content>

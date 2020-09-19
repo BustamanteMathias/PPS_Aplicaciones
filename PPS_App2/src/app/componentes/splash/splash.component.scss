@@ -1,0 +1,192 @@
+.contenedor {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    -webkit-animation: aFondo 5s linear alternate both;
+    animation: aFondo 5s linear alternate both;
+}
+
+.conLogo {
+    display: table-cell;
+    vertical-align: middle;
+    top: 25%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: 150px;
+        background-color: transparent;
+        background: url("../../../assets/splashLogo.png");
+        background-size: 100% 100%;
+        -webkit-animation: aLogo 5s ease-out both;
+        animation: aLogo 5s ease-out both;
+    }
+}
+
+.titulo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 25vh;
+    background-color: transparent;
+
+    p {
+        position: absolute;
+        width: 100vw;
+        bottom: 20%;
+        font-family: 'TTNormsBlack';
+        font-weight: bold;
+        font-style: normal;
+        text-align: center;
+        font-size: 5vh;
+        color: white;
+        -webkit-animation: aTitulo 5s both;
+        animation: aTitulo 5s both;
+    }
+}
+
+.detalle {
+
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 25vh;
+    background-color: transparent;
+
+    p {
+        position: absolute;
+        width: 100vw;
+        top: 10%;
+        font-family: 'IosevkaExtraboldExtended';
+        font-weight: bold;
+        font-style: normal;
+        text-align: center;
+        font-size: 8vh;
+        color: white;
+        -webkit-animation: aDetalle 5s both;
+        animation: aDetalle 5s both;
+    }
+}
+
+/* ANIMACION TITULO */
+
+@-webkit-keyframes aTitulo {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes aTitulo {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* ANIMACION DETALLE */
+
+@-webkit-keyframes aDetalle {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes aDetalle {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* ANIMACION BACKGROUND */
+
+@-webkit-keyframes aFondo {
+    0% {
+        background: #fffb00;
+    }
+
+    100% {
+        background: #1ba300;
+    }
+}
+
+@keyframes aFondo {
+    0% {
+        background: #fffb00;
+    }
+
+    100% {
+        background: #1ba300;
+    }
+}
+
+/* ANIMACION LOGO */
+
+@-webkit-keyframes aLogo {
+    0% {
+        -webkit-transform: rotate(-540deg) scale(0);
+        transform: rotate(-540deg) scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(2);
+        transform: rotate(0) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes aLogo {
+    0% {
+        -webkit-transform: rotate(-540deg) scale(0);
+        transform: rotate(-540deg) scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(2);
+        transform: rotate(0) scale(2);
+        opacity: 1;
+    }
+}
