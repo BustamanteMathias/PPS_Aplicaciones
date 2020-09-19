@@ -1,0 +1,25 @@
+ion-content{
+    --ion-background-color: transparent;
+    background: url("https://andro4all.com/files/2020/09/Fondo-de-pantalla-de-edificio-al-atardecer.jpg"); 
+    background-size: 100% 100%;
+}
+
+.titulo{
+    margin-top: 20%;
+    position: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.debug{
+    position: relative;
+}
+
+p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    color: #8c8c8c;
+    margin: 0;
+}
