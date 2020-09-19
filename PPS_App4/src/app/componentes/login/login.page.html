@@ -1,0 +1,31 @@
+<ion-content>
+
+  <div class="conteneedorTipoUsuario">
+    <ion-fab (click)="PickerUsuarios()" horizontal="end" vertical="center" slot="fixed">
+      <ion-fab-button color="dark">
+        <ion-icon name="people"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+
+  <div class="login">
+    <ion-title color="light">Ingresar</ion-title><br>
+
+    <input (click)="LimpiarErrorEmail()" style="background-color: rgb(244,245,248);" type="email" [(ngModel)]="email"
+      placeholder="Correo">
+    <input (click)="LimpiarErrorPass()" style="background-color: rgb(244,245,248);" type="password" [(ngModel)]="pass"
+      placeholder="Contraseña"> <br>
+    <ion-badge color="danger" slot="end">{{errorMsj}}</ion-badge>
+
+  </div>
+
+  <div class="imagen">
+    <img src="../../assets/fondo/QR_Credito.png">
+  </div>
+
+  <div class="contenedorInput">
+    <ion-button (click)="Ingresar()" expand="full" color="light">INGRESAR</ion-button>
+    <ion-button expand="full" color="dark">SALIR</ion-button>
+  </div>
+
+</ion-content>

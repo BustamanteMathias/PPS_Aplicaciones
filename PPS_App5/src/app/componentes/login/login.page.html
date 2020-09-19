@@ -1,0 +1,42 @@
+<div class="contenedor">
+  <div class="tipoUsuarios">
+    <ion-progress-bar></ion-progress-bar>
+    <ion-chip outline color="secondary" (click)="IngresarTipo('Tester')">
+      <ion-label>Tester</ion-label>
+    </ion-chip>
+    <ion-chip outline color="secondary" (click)="IngresarTipo('Usuario')">
+      <ion-label>Usuario</ion-label>
+    </ion-chip>
+    <ion-chip outline color="secondary" (click)="IngresarTipo('Invitado')">
+      <ion-label>Invitado</ion-label>
+    </ion-chip>
+    <ion-chip outline color="secondary" (click)="IngresarTipo('Anonimo')">
+      <ion-label>Anonimo</ion-label>
+    </ion-chip>
+    <ion-chip outline color="secondary" (click)="IngresarTipo('Administrador')">
+      <ion-label>Administrador</ion-label>
+    </ion-chip>
+    </div>
+    
+    <ion-item>
+      <ion-label>Correo</ion-label>
+      <ion-input (click)="LimpiarErrorEmail()" [(ngModel)]="email" type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Contraseña</ion-label>
+      <ion-input (click)="LimpiarErrorPass()" [(ngModel)]="pass" type="password"></ion-input>
+    </ion-item>
+    <ion-progress-bar></ion-progress-bar>
+
+    <ion-badge color="danger" slot="end">{{errorMsj}}</ion-badge>
+
+    <div class="imagen">
+      <img src="../../../assets/fondo/QR_Documento2.png">
+    </div>
+
+    <div class="inputIngresar">
+      <ion-button (click)="Ingresar()" size="large" expand="full" color="light">INGRESAR</ion-button>
+      <ion-button expand="full" color="medium">LIMPIAR</ion-button>
+    </div>
+</div>

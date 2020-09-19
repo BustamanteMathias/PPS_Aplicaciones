@@ -1,0 +1,38 @@
+<ion-content color="dark" style="border-style: solid; border-color: aliceblue;">
+
+  <ion-list>
+    <ion-item color="warning">
+      <ion-label>TIPO DE USUARIO</ion-label>
+      <ion-select [(ngModel)]="SelectedItem" (ionChange)="OnChange($event)" interface="popover">
+        <ion-select-option>Administrador</ion-select-option>
+        <ion-select-option>Usuario</ion-select-option>
+        <ion-select-option>Invitado</ion-select-option>
+        <ion-select-option>Anonimo</ion-select-option>
+        <ion-select-option>Tester</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div class="image">
+    <img src="../../../assets/avatar/neinerNoTeLoLleves.png">
+  </div>
+
+  <div class="login">
+    <ion-progress-bar color="dark" type="indeterminate"></ion-progress-bar>
+    <ion-item color="warning">
+      <ion-label color="dark">{{errorEmail}}</ion-label>
+      <ion-label position="stacked">Correo</ion-label>
+      <ion-input (click)="LimpiarErrorEmail()" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item color="warning">
+      <ion-label color="dark">{{errorPass}}</ion-label>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input (click)="LimpiarErrorPass()" [(ngModel)]="pass" type="password"></ion-input>
+    </ion-item>
+
+    <ion-progress-bar color="dark" type="indeterminate" reversed="true"></ion-progress-bar>
+    <ion-button (click)="Ingresar()" expand="full" color="warning">INGRESAR</ion-button>
+  </div>
+
+</ion-content>

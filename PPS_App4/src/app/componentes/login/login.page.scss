@@ -1,0 +1,50 @@
+ion-content {
+    --ion-background-color: transparent;
+    background-color: #00C29B;
+}
+
+.conteneedorTipoUsuario {
+    position: relative;
+    padding-top: 20%;
+}
+
+.imagen {
+    position: absolute;
+    background-color: transparent;
+    bottom: 0;
+}
+
+.login {
+    width: 100%;
+    border-style: solid;
+    border-radius: 1%;
+    border-color: #00C29B;
+}
+
+.contenedorInput {
+    position: absolute;
+    width: 37%;
+    height: 20%;
+    right: 1px;
+    top: 38%;
+}
+
+input[type=email] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #049276;
+    border-radius: 4px;
+  }
+
+  input[type=password] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #049276;
+    border-radius: 4px;
+  }
